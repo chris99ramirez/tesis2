@@ -1,0 +1,83 @@
+.sales-container {
+    padding: 20px;
+    .sales-pagination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+
+        .new-btn {
+            padding: 10px 15px;
+            background-color: #009688; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            &:hover {
+                background-color: #fff;
+                color: #009688;
+                border: 2px solid #009688;
+            }
+        }
+    }
+    .sales-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        h1 {
+            margin: 0;
+        }
+    }
+    .sales-table{
+        min-height: 450px; 
+        overflow-y: auto; 
+    }
+    .sales-filters {
+        display: flex;
+        align-items: center;
+        gap: 700px; 
+        padding: 10px;
+        margin-top: 40px;
+        .right-section {
+            display: flex;
+            align-items: center; 
+            label {
+                margin-right: 25px;
+            }
+            input[type="date"] {
+                padding: 12px; 
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                width: 250px;
+                margin-right: 10px; 
+
+              }
+              .search-btn {
+                padding: 5px 15px;
+                background-color: #009688;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s; 
+                &:hover {
+                    background-color: #fff; 
+                    color: #009688; 
+                    border: 2px solid #009688;
+                }
+            }
+        }
+        
+
+
+    }
+    .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px; 
+      }
+}
